@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script lang="javascript">
+			var a,b,c,d,e;
+			a=prompt("Enter your name");
+			d=confirm("Do you want to change the color of "+a+"?");
+			if (d==true)
+			{
+				b=prompt("Enter the color");
+				e=confirm("Do you want to change the size of "+a+"?");
+				if (e==true)
+				{
+					c=parseInt(prompt("Enter the size of text"));
+				}
+			}
+			else 
+			{	
+				e=confirm("Do you want to change the size of "+a+"?");
+				if (e==true)
+				{
+					c=parseInt(prompt("Enter the size of text"));
+				}
+			}
+				document.write("<font size="+c+" color="+b+">"+a+"</font>");		
+		</script>
+	</head>
+</html>	
